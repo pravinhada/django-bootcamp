@@ -1,0 +1,6 @@
+.DS_Store
+venv
+mysite
+learning_templates/db.sqlite3
+learning_templates/learning_templates/__pycache__
+learning_templates/basic_app/__pycache__
