@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Hello Title</title>
+        <link rel="stylesheet" href="{% static 'css/main.css' %} " />
+    </head>
+
+    <body>
+        <h1>Date Accessed</h1>
+        <h2>Below are your records</h2>
+        <div class="data">
+            {% if access_records %}
+            <table>
+                <thead>
+                    <th>Site Name</th>
+                    <th>Date Accessed</th>
+                </thead>
+                {% for t in access_records %}
+                <tr>
+                    <td>{{ t.name }}</td>
+                    <td>{{ t.date }}</td>   
+                </tr>    
+                {% endfor %}
+            </table>
+            {% else %}
+            <p>No access records found</p>
+            {% endif %}
+        </div>
+
+    </body>
+</html>

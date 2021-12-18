@@ -1,5 +1,10 @@
 .DS_Store
 venv
-mysite
+mysite/mysite/__pycache__
+mysite/hello/__pycache__
+
 learning_templates/learning_templates/__pycache__
 learning_templates/basic_app/__pycache__
+
+class_based_view/class_based_view/__pycache__
+class_based_view/basic_app/__pycache__
