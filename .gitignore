@@ -8,3 +8,6 @@ learning_templates/basic_app/__pycache__
 
 class_based_view/class_based_view/__pycache__
 class_based_view/basic_app/__pycache__
+
+blog_project/blog/__pycache__
+blog_project/blog_project/__pycache__
