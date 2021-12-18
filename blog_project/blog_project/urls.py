@@ -15,8 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.auth import views
+from blog.views import PostListView
 
 urlpatterns = [
+    path('', PostListView.as_view(), name='post_detail'),
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
+    path('accounts/login', views.LoginView.as_view(), name='login'),
+    path('accounts/logout', views.LogoutView.as_view(), name='logout', kwargs ={'next_page': '/'}),
 ]
