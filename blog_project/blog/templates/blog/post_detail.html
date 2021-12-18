@@ -25,7 +25,7 @@
 
 <div class="container">
 
-    {% for comment in post.comment.all %}
+    {% for comment in post.comments.all %}
     <br>
     {% if user.is_authenticated or comment.approved_comment %}
     {{ comment.created_date }}
@@ -35,7 +35,7 @@
     <a href="{% url 'comment_remove' pk=comment.pk %}" class="btn btn-primary"><span
             class="glyphicon glyphicon-remove">Remove</span></a>
     {% endif %}
-    <p>{{comment.text | safe | linebreaks</p>
+    <p>{{comment.text | safe | linebreaks }}</p>
     <p>Posted By: {{ comment.author }}</p>
     {% endif %}
     {% empty %}
