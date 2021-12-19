@@ -12,3 +12,6 @@ class_based_view/basic_app/__pycache__
 blog_project/blog/__pycache__
 blog_project/blog_project/__pycache__
 blog_project/blog/migrations/__pycache__
+
+video_rental/video/__pycache__
+video_rental/video_rental/__pycache__
