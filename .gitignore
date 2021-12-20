@@ -1,3 +1,4 @@
+.vscode
 .DS_Store
 venv
 mysite/mysite/__pycache__
@@ -15,3 +16,12 @@ blog_project/blog/migrations/__pycache__
 
 video_rental/video/__pycache__
 video_rental/video_rental/__pycache__
+video_rental/video/migrations/__pycache__
+
+simplesocial/simplesocial/__pycache__
+simplesocial/accounts/__pycache__
+simplesocial/accounts/migrations/__pycache__
+simplesocial/posts/__pycache__
+simplesocial/posts/migrations/__pycache__
+simplesocial/groups/__pycache__
+simplesocial/groups/migrations/__pycache__
