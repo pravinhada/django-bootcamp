@@ -1,5 +1,5 @@
 from django.http.response import Http404
-from rest_framework import authentication
+from rest_framework import filters
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status, viewsets
@@ -88,3 +88,5 @@ class UserProfileViewSet(viewsets.ModelViewSet):
     queryset = models.UserProfile.objects.all()
     authentication_classes = (TokenAuthentication,)
     permission_classes = (permissions.UpdateOwnProfile, )
+    filter_backends = (filters.SearchFilter,)
+    search_fields = ('name', 'email',)
