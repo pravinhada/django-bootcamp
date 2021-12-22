@@ -1,6 +1,14 @@
+env/
+venv/
 .vscode
 .DS_Store
 venv
+env
+.env
+.venv
+settings.json
+
+
 mysite/mysite/__pycache__
 mysite/hello/__pycache__
 
