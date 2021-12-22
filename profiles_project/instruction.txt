@@ -1,0 +1,2 @@
+install modhttp for chrome browser
+add Authorization Token <token> in the http request
