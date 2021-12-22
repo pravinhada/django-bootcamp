@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework import routers
-from profiles_api.views import HelloApiView, HelloViewSet, UserProfileViewSet
+from profiles_api.views import HelloApiView, HelloViewSet, UserProfileViewSet, UserLoginApiView
 from rest_framework.routers import DefaultRouter
 
 
@@ -10,6 +10,7 @@ router.register('profile', UserProfileViewSet)
 
 
 urlpatterns = [
-    path('hello/', HelloApiView.as_view(), name='hellow_view'),
+    path('hello/', HelloApiView.as_view()),
+    path('login/', UserLoginApiView.as_view()),
     path('', include(router.urls)),
 ]
