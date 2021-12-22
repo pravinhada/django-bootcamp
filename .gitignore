@@ -33,3 +33,8 @@ simplesocial/posts/__pycache__
 simplesocial/posts/migrations/__pycache__
 simplesocial/groups/__pycache__
 simplesocial/groups/migrations/__pycache__
+
+
+profiles_project/profiles_project/__pycache__
+profiles_project/profiles_api/__pycache__
+profiles_project/profiles_api/migrations/__pycache__
